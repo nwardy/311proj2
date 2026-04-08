@@ -46,10 +46,6 @@ $(BUILD_DIR)/%.o: src/%.cc | $(BUILD_DIR)
 # Include dependency file if it exists
 -include $(DEP)
 
-# Directory creation
-$(BIN_DIR) $(BUILD_DIR):
-	$(MKDIR) $@
-
 # Cleanup
 clean:
 	$(RM) $(OBJ) $(DEP) $(BIN)
